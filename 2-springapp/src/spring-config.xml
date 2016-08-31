@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="admin" class="net.rokefeler.samplespring.Administrador">
+	    <!-- <constructor-arg name="idAdministrador" value="88"></constructor-arg>
+	    <constructor-arg name="nombre" value="Jose Roque"></constructor-arg> -->
+	    <property name="idAdministrador" value="77"></property>
+	    <property name="nombre" value="Jose Roque"></property>
+	</bean>
+
+</beans>
