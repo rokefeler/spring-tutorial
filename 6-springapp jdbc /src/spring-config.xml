@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/context
+						http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+	
+	<context:component-scan base-package="net.rokefeler.samplespring"></context:component-scan>
+	
+	<bean id="dataSource" class="org.apache.commons.dbcp.">
+	    <property name="driverClassName" value="org.mariadb.jdbc.Driver"></property>
+	    <property name="url" value="jdbc:mariadb://localhost:3306/springdb"></property>
+	    <property name="username" value="root"></property>
+	    <property name="password" value=""></property> 	
+	</bean>	
+	    
+	</bean>
+<!-- 	<bean id="admin" class="net.rokefeler.samplespring.Administrador"> -->
+
+<!-- 		<constructor-arg name="idAdministrador" value="88"></constructor-arg>  -->
+<!-- 		<constructor-arg name="nombre" value="Jose Roque"></constructor-arg> -->
+
+<!-- 		<property name="idAdministrador" value="77"></property> -->
+<!-- 		<property name="nombre" value="Jose Roque"></property> -->
+<!-- 		<property name="direccion" ref="direccion"></property>  -->
+<!-- 	</bean> -->
+
+<!-- 	<bean id="direccion" class="net.rokefeler.samplespring.Direccion"> -->
+<!-- 		<constructor-arg name="calle" value="Av. Arequipa 701A"></constructor-arg> -->
+<!-- 		<constructor-arg name="cp" value="Arequipa"></constructor-arg> -->
+<!-- 	</bean> --><bean></bean>
+
+</beans>
